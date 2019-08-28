@@ -1,0 +1,5 @@
+Do you remember what happens when we run the following line of code?
+
+brad=turtle.Turtle()
+
+Function named__init__is called;it it initializes or creates space in memory for new instance brad

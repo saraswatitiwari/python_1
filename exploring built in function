@@ -1,0 +1,8 @@
+for day_num, day in enumerate(['Wed', 'Thurs', 'Fri'], 3):
+    print '%s is the %d day of the week!' % (day, day_num)
+
+prints:
+
+Wed is the 3 day of the week!
+Thurs is the 4 day of the week!
+Fri is the 5 day of the week!    

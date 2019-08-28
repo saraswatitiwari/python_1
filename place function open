@@ -1,0 +1,3 @@
+Where in our model of python standard library should i place the function "open"?
+
+In a space of its own inside the python standard library.

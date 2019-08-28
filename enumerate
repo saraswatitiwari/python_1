@@ -1,0 +1,48 @@
+# First we grab test scores from the whole gang (minus a.c. slater)
+screech = [100.00, 92, 89, 93, 100]
+jesse = [99, 100, 100, 97, 90]
+zak = [50, 67, 33, 42, 65]
+kelley = [90, 82, 92, 82, 100]
+
+# We need a list to hold the group average of each test score, aka: "class average"
+running_totals = []
+
+# now we want to get everyone's test score for each test and also hold a reference
+# to which test we are on, test_num will hold that number.
+for test_num, (a, b, c, d) in enumerate(zip(screech, jesse, zak, kelley), 1):
+    print "Class Scores for test %d" % test_num
+    print 'Individuals %d, %d, %d, %d' % (a, b, c, d)
+    total = a + b + c + d
+    current_average = total / 4
+    running_totals.append(current_average)
+    print 'Test Average: %d' % current_average
+    running_average = sum(running_totals) / len(running_totals)
+    print 'Running Average: %d' % running_average
+    print '-' * 30
+
+output:
+
+Class Scores for test 1
+Individuals 100, 99, 50, 90
+Test Average: 84
+Running Average: 84
+--------------------
+Class Scores for test 2
+Individuals 92, 100, 67, 82
+Test Average: 85
+Running Average: 84
+--------------------
+Class Scores for test 3
+Individuals 89, 100, 33, 92
+Test Average: 78
+Running Average: 82
+--------------------
+Class Scores for test 4
+Individuals 93, 97, 42, 82
+Test Average: 78
+Running Average: 81
+--------------------
+Class Scores for test 5
+Individuals 100, 90, 65, 100
+Test Average: 88
+Running Average: 82

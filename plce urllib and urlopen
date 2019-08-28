@@ -1,0 +1,3 @@
+Where in our model of the python standard library should we add 'urllib' and 'urlopen'?
+
+"urllib" is also a module or a file in python and "urlopen" is a function inside it.

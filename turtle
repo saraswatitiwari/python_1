@@ -1,0 +1,83 @@
+import turtle
+cora= turtle.Turtle()
+cora.color("magenta")
+cora.speed(15)
+#mild
+for i in range(3):
+	cora.forward(100)
+	cora.right(360/3)
+
+for i in range(4):
+	cora.forward(100)
+	cora.right(360/4)
+
+for i in range(5):
+	cora.forward(100)
+	cora.right(360/5)
+
+for i in range(6):
+	cora.forward(100)
+	cora.right(360/6)
+
+for i in range(8):
+	cora.forward(100)
+	cora.right(360/8)
+
+#medium
+cora.penup()
+cora.goto(200,200)
+cora.pendown()
+
+cora.begin_fill()
+for i in range(3):
+	cora.forward(100)
+	cora.right(360/3)
+cora.end_fill()
+
+cora.penup()
+cora.goto(100,200)
+cora.pendown()
+
+cora.begin_fill()
+for i in range(4):
+	cora.forward(100)
+	cora.right(360/4)
+cora.end_fill()
+
+cora.penup()
+cora.goto(-50,200)
+cora.pendown()
+
+cora.begin_fill()
+for i in range(5):
+	cora.forward(100)
+	cora.right(360/5)
+cora.end_fill()
+
+cora.penup()
+cora.goto(-150,-200)
+cora.pendown()
+
+cora.begin_fill()
+for i in range(6):
+	cora.forward(100)
+	cora.right(360/6)
+cora.end_fill()
+
+cora.penup()
+cora.goto(175,-200)
+cora.pendown()
+
+cora.begin_fill()
+for i in range(8):
+	cora.forward(100)
+	cora.right(360/8)
+cora.end_fill()
+
+
+#caliente
+cora.clear()
+sides=int(input("How many sides do you want?"))
+for i in range(sides):
+	cora.forward(100)
+	cora.right(360/sides)

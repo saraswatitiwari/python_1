@@ -1,0 +1,6 @@
+What will be the output of the following?
+
+>>>avatar=media.Movie("Avatar","A marine on an alien planet","Avatar poster link","Avatar youtube link")
+>>>print(avatar.storyline)
+
+A marine on an alien planet

@@ -1,0 +1,16 @@
+import urllib
+
+def read_text(path):
+    quotes = open(path)
+    contents_of_file = quotes.read()
+    print(contents_of_file)
+    quotes.close()
+    quote_like_a_pirate(contents_of_file)
+
+def quote_like_a_pirate(text_to_check):
+    connection = urllib.urlopen("http://isithackday.com/arrpi.php?text=" + "Real Pirates say it like this:\n" + text_to_check)
+    output = connection.read()
+    print("\n" + output)
+    connection.close()
+
+read_text("quotes.txt") # located in the same folder as this script
